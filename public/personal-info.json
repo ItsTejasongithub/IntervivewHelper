@@ -1,0 +1,131 @@
+{
+  "name": "Tejas Kandi",
+  "title": "Robotics Engineer",
+  "location": "Pune, Maharashtra, India",
+  "contact": {
+    "phone": "+91-9960007430",
+    "email": "tejaskandi14@gmail.com",
+    "linkedin": "linkedin.com/in/tejas-kandi",
+    "github": "github.com/ItsTejasongithub"
+  },
+  "summary": "Experienced Robotics Engineer with 2+ years in ADAS Level 2 systems, embedded software development, and autonomous robotics. Proven expertise in ROS2, computer vision, control systems, and 3D design.",
+  "skills": {
+    "robotics": [
+      "ROS2",
+      "Navigation Stack",
+      "Motion Planning",
+      "Manipulator Control",
+      "Computer Vision (OpenCV, TensorFlow, PyTorch)",
+      "PID Control",
+      "Inverse Kinematics",
+      "Model Predictive Control"
+    ],
+    "embedded": [
+      "Infineon Aurix",
+      "STM32",
+      "Arduino",
+      "Raspberry Pi",
+      "AUTOSAR",
+      "CAN",
+      "LIN",
+      "RTOS",
+      "FreeRTOS"
+    ],
+    "programming": [
+      "C/C++",
+      "Python",
+      "MATLAB"
+    ],
+    "ai_ml": [
+      "Reinforcement Learning",
+      "PPO",
+      "SAC",
+      "TD3",
+      "TensorFlow",
+      "PyTorch",
+      "Isaac Sim",
+      "Isaac Lab",
+      "Gazebo"
+    ],
+    "design": [
+      "Fusion 360",
+      "SolidWorks",
+      "3D Printing",
+      "AutoCAD Electrical"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Linux",
+      "Ubuntu"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Research Analyst - Embedded Systems & Robotics",
+      "company": "10xTechClub",
+      "location": "Pune, India",
+      "duration": "March 2025 - Present",
+      "highlights": [
+        "Lead comprehensive robotics research projects including autonomous rovers, robotic manipulators, UAVs, humanoid robots",
+        "Implement advanced control algorithms: PID, inverse kinematics, path planning",
+        "Design and prototype using Fusion 360, 3D modeling, additive manufacturing",
+        "Research reinforcement learning for robotic policy training using Isaac Sim"
+      ]
+    },
+    {
+      "title": "Embedded Systems Engineer",
+      "company": "FORVIA HELLA (Mercedes-Benz Project)",
+      "location": "Pune, India",
+      "duration": "July 2023 - February 2025",
+      "highlights": [
+        "Developed ADAS Level 2 autonomous driving systems on Infineon Aurix microcontrollers",
+        "Programmed embedded software using C/C++ and RTOS",
+        "Optimized AI models for microcontroller deployment",
+        "Enhanced manufacturing automation workflows by 18-25%"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Robotic Arm Manipulator",
+      "description": "5-DOF robotic arm with servo actuation, inverse kinematics, computer vision for pick-and-place operations"
+    },
+    {
+      "name": "Autonomous Navigation Rover",
+      "description": "ROS2-based navigation with SLAM, LiDAR obstacle detection, path planning algorithms"
+    },
+    {
+      "name": "Self-Balancing Robot",
+      "description": "PID control for two-wheel platform stability, IMU integration, dynamic balancing"
+    },
+    {
+      "name": "Hexapod Walking Robot",
+      "description": "Six-legged locomotion with gait generation, terrain adaptation, custom mechanical linkages"
+    },
+    {
+      "name": "AI-Powered ADAS Demonstration",
+      "description": "Lightweight CNN for real-time object detection on microcontroller with minimal latency"
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Technology in Electronics & Telecommunication Engineering",
+    "institution": "Walchand Institute of Technology",
+    "location": "Solapur, India",
+    "year": "2019 - 2023",
+    "coursework": "Digital Signal Processing, Microprocessors, Control Systems, Embedded Systems Design"
+  },
+  "certifications": [
+    "Career Essentials in Generative AI - Microsoft & LinkedIn",
+    "Six Sigma Green Belt - Quality Management",
+    "Six Sigma White Belt - Process Improvement",
+    "AutoCAD Electrical Certification",
+    "SAP ERP Essentials"
+  ],
+  "additional": {
+    "languages": ["English (Professional)", "Hindi (Native)", "Marathi (Native)"],
+    "research_interests": ["Sim2Real Transfer Learning", "Humanoid Robotics", "Autonomous Systems"],
+    "teaching": "World Robot Olympiad (WRO) mentor, Programming tutor"
+  }
+}
