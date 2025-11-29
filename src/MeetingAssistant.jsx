@@ -426,43 +426,15 @@ export default function MeetingAssistant() {
         console.log('⚡ No personal context needed - using pure AI knowledge (saves tokens!)');
       }
 
-      // Build system message with or without personal context
-      let systemMessage = `You are an AI interview assistant helping a candidate answer technical interview questions in real-time.
-
-Your responses should:
-- Be brief and professional (2-3 sentences)
-- Sound natural and conversational, as if YOU are the candidate
-- Include specific technical details when relevant
-- Demonstrate practical knowledge without over-explaining
-- Focus on real-world experience and results
-- Always answer in first person as the candidate
-- Remember and reference previous parts of the conversation when relevant
-
-Never say "I'm an AI" or "I haven't done this" - instead, provide helpful, realistic answers a qualified candidate would give.`;
-
-      // Add personal context if provided (Personalized Mode)
-      if (relevantContext && relevantContext.trim()) {
-        systemMessage += `\n\n--- CANDIDATE'S PERSONAL INFORMATION ---\n${relevantContext}\n\nUse this information when answering questions about experience, projects, skills, or background. Speak as if YOU are the candidate with this experience.`;
-      }
-
-      // Build messages array with conversation history
-      const messages = conversationContext && conversationContext.length > 0
-        ? [...conversationContext, { role: 'user', content: cleanedQuestion }]
-        : [{ role: 'user', content: cleanedQuestion }];
-
-      // Call Anthropic API directly from browser
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
+      const response = await fetch('/api/chat', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': import.meta.env.VITE_ANTHROPIC_API_KEY,
-          'anthropic-version': '2023-06-01'
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          model: 'claude-haiku-4-5-20251001',
-          max_tokens: 350,
-          system: systemMessage,
-          messages: messages
+          question: cleanedQuestion,
+          conversationHistory: conversationContext,
+          personalContext: relevantContext // Send only relevant context, not entire resume
         })
       });
 
